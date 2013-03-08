@@ -1,4 +1,9 @@
 <!doctype html>
+<!-- 
+	Visual Frameworks Project 1
+	By: Deus Duke 
+	Term:  1303
+-->
 <html>
 	<head>
 		<title>Project List</title>
@@ -9,10 +14,36 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
 	<body>
-		<h1>Project List</h1>
+		<h1>Create a Project</h1>
 		<form action="index.html">
-			<legend>Add A Project</legend>
-			<input type="submit">
+			<legend>Project Details</legend>
+			<fieldset>
+				<label for="projectName">Project Name</label>
+				<input id="projectName" name="projectName" type="text" />
+				<br>
+
+				<label for="startDate">Start Date</label>
+				<input id="startDate" name="startDate" type="date" />
+				<br>
+
+				<label for="type">Type</label>
+				<input name="type" type="radio" value="internal" />
+				<input name="type" type="radio" value="external" />
+				<input name="type" type="radio" value="personal" />
+				<br>
+				
+				<label for="priority">Priority</label>
+				<input id="priority" name="priority" type="range" min="1" max="5"/>
+				<br>
+
+				<input type="submit">
+				<br>
+			</fieldset>
+			<input type="hidden">
 		</form>
+
+		<a href="#">Save</a>
+		<br>
+		<a href="#">Display Projects</a>
 	</body>
 </html>
